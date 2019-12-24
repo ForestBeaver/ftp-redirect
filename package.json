@@ -8,7 +8,7 @@
     "start": "./index.js",
     "develop": "nodemon ./index.js"
   },
-  "author": "",
+  "author": "Forest Beaver",
   "license": "ISC",
   "dependencies": {
     "ftp-srv": "^4.3.0",

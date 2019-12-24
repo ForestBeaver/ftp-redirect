@@ -7,8 +7,8 @@ const ip = internalIp.v4.sync();
 const ftpServer = new FtpSrv({
   url: `ftp://${ip}:21`,
   pasv_url: ip,
-  pasv_min: 1024,
-  pasv_max: 2048,
+  pasv_min: 50000,
+  pasv_max: 60000,
   anonymous: true
 });
 

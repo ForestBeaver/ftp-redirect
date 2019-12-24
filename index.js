@@ -1,9 +1,12 @@
+const internalIp = require("internal-ip");
 const { FtpSrv } = require("ftp-srv");
 const VirtualFileSystem = require("./virtual_file_system");
 
+const ip = internalIp.v4.sync();
+
 const ftpServer = new FtpSrv({
-  url: "ftp://192.168.1.11:21",
-  pasv_url: "192.168.1.11",
+  url: `ftp://${ip}:21`,
+  pasv_url: ip,
   pasv_min: 1024,
   pasv_max: 2048,
   anonymous: true

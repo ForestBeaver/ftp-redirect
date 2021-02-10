@@ -11,7 +11,7 @@
   "author": "Forest Beaver",
   "license": "ISC",
   "dependencies": {
-    "ftp-srv": "^4.3.4",
+    "ftp-srv": "^4.4.0",
     "internal-ip": "^5.0.0",
     "stats-ctor": "^1.1.0"
   },
